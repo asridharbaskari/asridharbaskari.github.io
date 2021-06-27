@@ -12,7 +12,7 @@
     //     navItems.href = '../pages/' + navItems.href
     // }
 
-    var test = true; //so my urls don't bugger up in my local environment
+    var test = false; //so my urls don't bugger up in my local environment
     if (!test) {
         for (var i = 0; i < navItems.length; i++) {
             var url = navItems[i].href
