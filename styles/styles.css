@@ -19,6 +19,10 @@
     --heading-color  : #818cab;
 }
 
+#moon {
+    font-size: xx-large;
+}
+
 body {
     background-color: var(--bg-color);
     color           : var(--font-color);
@@ -31,6 +35,9 @@ body {
 .main {
     max-width: 720px;
     margin   : 10px auto;
+    display: grid;
+    place-items: center;
+    padding    : 0em 2em;
 }
 
 nav {
@@ -63,6 +70,7 @@ li a:hover {
 
 header {
     display: grid;
+    place-items: center;
 }
 
 header h1 {
@@ -81,17 +89,13 @@ h1 a {
 }
 
 hr {
-    display      : block;
+    width: 720px;
+    margin: auto;
+    display      : grid;
     border       : 1px solid var(--secondary-color);;
     border-radius: 5px;
 }
 
-.main {
-    place-items: center;
-    max-width  : 720px;
-    margin     : 30px auto;
-    padding    : 4em 2em;
-}
 
 #content {
     font-family: 'EB Garamond', serif;
@@ -123,7 +127,7 @@ hr {
 }
 
 .theme-switch-wrapper em {
-    margin-left: 10px;
+    margin-left: 1px;
     font-size  : 1rem;
 
 }
