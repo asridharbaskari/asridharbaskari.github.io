@@ -19,18 +19,12 @@
     --heading-color  : #818cab;
 }
 
-#moon {
-    font-size: xx-large;
-}
 
 body {
     background-color: var(--bg-color);
     color           : var(--font-color);
 }
 
-/* * {
-    background-color: #121212;
-} */
 
 .main {
     max-width: 720px;
@@ -85,7 +79,7 @@ header h1 {
 
 h1 a {
     text-decoration: none;
-    color          : var(--heading-color);
+    color          : var(--font-color);
 }
 
 hr {
@@ -179,4 +173,8 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+#name {
+    font-weight: 500;
 }
