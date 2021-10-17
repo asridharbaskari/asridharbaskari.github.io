@@ -1,0 +1,31 @@
+<h1 id="it-s-day-one-">It&#39;s day one.</h1>
+<h3 id="introduction">Introduction</h3>
+<p>As someone relatively new to problem solving, the <a href="https://icpc.global">ICPC</a> looks incredibly daunting. Five hours of back to back programming challenges, each problem more formidable than the last. Three lucky contestants. One computer. It&#39;s the algorithmic whiteboard interviews (which terrify me) taken to the extreme. But that won&#39;t stop me from cataloguing my experiences trying, failing, crashing, burning, and hopefully learning something in the process. </p>
+<p>Just to put into perspective how <em>day one</em> it really is, I have a confession to make. I cannot, for the life of me, solve LeetCode Easy problems. The most competitive programming experience I have is attempting USACO Bronze at my school library and utterly failing. Never in my four lackluster attempts at the AMC exam have I ever qualified for AIME, and not for a lack of trying either. All of this to say, <em>I am not gifted at problem solving</em>. </p>
+<p>But I love it. </p>
+<p>There&#39;s nothing more gratifying than suffering a harrowing defeat at the hands of the beast, only to come back wiser and stronger, unwilling to take no for an answer. There&#39;s nothing more beautiful than observing an elegant simplification, an imperceptible shift in perspective that makes a world of difference. And there&#39;s nothing more self-affirming than knowing that you can solve it. </p>
+<p>I know that there&#39;s an arduous path ahead of me. But the difficulty is minuscule compared to the reward.</p>
+<h3 id="why-">Why?</h3>
+<p><strong>Why am I writing this?</strong> It is true that I am a beginner, but that should not deter you from reading these entries. I&#39;ve left them here to prove a point. <em>Anything you love doing is worth toiling for</em>. I harbor no expectations of winning the World Finals or becoming a Legendary Grandmaster on CodeForces. But invariably, I will grow from the experience of trying. And so will you, if you care to join me.</p>
+<p><strong>Why should you read this?</strong> If you are interested in competitive programming or any sort of career in tech, chances are, you&#39;ll have to solve some really hard problems. And chances are, you&#39;ll eventually hit a brick wall. A problem that you can&#39;t solve on the first try. A lot of people get frustrated and believe that they simply lack aptitude or that they aren&#39;t cut out for the career they want. <strong>This is almost always unequivocally false.</strong> If you find yourself drawn to these interesting puzzles or crave the technical challenges of programming and math, <strong>you are good enough.</strong> I think the best way to cure frustration and self-doubt is having proof that someone can go from a novice to an expert. My hope is to supply you that proof. </p>
+<p><strong>What if you fail?</strong> I most certainly might. Perhaps I&#39;ll be just as abysmal at problem solving ten years from now as I am today. But I&#39;ll know that I tried. At the very least, all the effort I put in will make me stronger, more focused, and more mindful of the beauty in the world around me. That&#39;s good enough for me.</p>
+<h3 id="codeforces-virtual-contest">CodeForces Virtual Contest</h3>
+<p>Today, the UC Davis ICPC team set up a virtual contest.</p>
+<p>Here&#39;s a breakdown of each problem, and how I approached them. Note that these are not the best, most simple, or even most correct solutions. They just happened to be ones that passed the test cases I was given.</p>
+<h4 id="a-computer-game">A. Computer Game</h4>
+<p>The problem is simple enough. Given a 2 by n grid with certain blocked off units, is it possible to reach the lower rightmost square from the upper leftmost square with the only legal move being moving one unit in any direction without skipping any squares?</p>
+<p>In this case, I immediately saw the solution. The grid is not walkable if and only if there are two adjacent blocked off units in both rows, which is a condition you can check with one pass of the array. </p>
+<h4 id="b-groups">B. Groups</h4>
+<p>Clearly not an exercise in abstract algebra, this question demands to know whether or not we can line up the schedules of <em>2k</em> students where <em>k</em> is an integer given which days they are free. The catch being that we need to find two distinct groups of people whose schedules match on at least one day.</p>
+<p>I approached this problem using sets. A set is a collection of elements without any repeats. The <set> library was rather helpful in accomplishing this.</p>
+<p>Essentially, I defined an operation for the union of two sets, which is a new set that includes elements from both of the sets. Again, this eliminates all duplicate elements.</p>
+<p>Why is this important?</p>
+<p>We want to determine whether or not there exists two days such that the set of people who are free on day <em>X</em> and day <em>Y</em> contain no common elements. In other words, the union of these sets must contain exactly <em>2k</em> elements.</p>
+<p>With that, we can create an array of sets and populate it with the index of each person, removing duplicates whenever necessary. </p>
+<p>Finally, we find all sets with size greater than or equal to k, and take their pairwise unions. As soon as we find a set with cardinality <em>k</em>, we are done. If we cannot find one, there is no optimal schedule that exists.</p>
+<h4 id="c-delete-two-elements">C. Delete Two Elements</h4>
+<p><em>Sigh</em>. This problem really frustrated me. I thought my solution worked but it wouldn&#39;t pass the third test case.</p>
+<p>The problem is simple. Given an array of integers, there&#39;s some real number <em>r</em> that corresponds to the arithmetic mean of the elements of the array. Can we remove two numbers from the array such that the arithmetic mean of the elements of the new array is still <em>r</em>?</p>
+<p>This reduces to a two-sum problem. Just find all pairs in the array that add up to 2*s/n. Simple, right?</p>
+<p><em>No.</em></p>
+<p>Still want to figure out what&#39;s wrong in my code. We&#39;ll go over the problems in our next training session.</p>
