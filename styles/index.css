@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* Variables */
+:root {
+    --font-family: "Roboto", sans-serif;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: #fcfcfc;
+    --primary-color: #4c8bf5;
+    --secondary-color: #DB4437;
+    --primary-shadow: #8b8eaf;
+    --secondary-shadow: #a17a69;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: var(--font-family);
+}
+
+/* CSS Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav { 
+    display: inline;
+    text-align: center;
+}
+
+nav h1 {
+    font-weight: 100;
+    font-size: 50pt;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav li a {
+    text-align: center;
+    font-size: larger;
+    padding: 0px 10px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+iframe {
+    display: grid;
+    margin: auto;
+    width: 100%;
+}
+
+.content {
+    /* padding: sides top_bottom */
+    padding: 0px 20px;  
+    margin: auto;
+    width: 400px;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+body {
+    font-family: var(--font-family);
+}
+
