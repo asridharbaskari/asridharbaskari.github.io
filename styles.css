@@ -1,8 +1,32 @@
 
-@import url("fonts/messina/stylesheet.css");
-body {font: 15px 'Messina Sans', sans-serif;}
+/* @import url("fonts/messina/stylesheet.css"); */
 
+h1, h2, h3 {
+    font-weight: normal;
+}
+body {
+    font: 15px 'Helvetica', sans-serif;
+}
+
+h1 .subheading {
+    display: block;
+    font-size: 65%;
+    opacity: 0.75;
+  }
 
 li.menu-item:not(:last-child) { 
     margin-bottom:3px;  
+ }
+
+ ol, ul {
+    text-decoration: none;
+    list-style: none;
+ }
+
+ .card {
+    position: absolute;
+  left: 50%;
+  top: 50%;
+  /* -webkit-transform: translate(-50%, -50%); */
+  transform: translate(-50%, -90%);
  }
