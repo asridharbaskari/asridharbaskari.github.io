@@ -1,12 +1,46 @@
 
-/* @import url("fonts/messina/stylesheet.css"); */
+@import url("fonts/messina/stylesheet.css");
 
-h1, h2, h3 {
+.title {
     font-weight: normal;
 }
+
+/* *{
+    padding: 0;
+    margin: 0;
+  } */
+
+  * {
+    text-align: left;
+  }
+  
 body {
-    font: 15px 'Helvetica', sans-serif;
+    font: 15px 'Messina Sans', sans-serif;
+    background-color: #edede9;
+background-image:  linear-gradient(#d5bdaf 2px, transparent 2px), linear-gradient(90deg, #d5bdaf 2px, transparent 2px), linear-gradient(#d5bdaf 1px, transparent 1px), linear-gradient(90deg, #d5bdaf 1px, #edede9 1px);
+background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
 }
+/* https://stackoverflow.com/questions/1065711/better-way-to-control-spacing-between-block-elements */
+.title {
+    font-size: xx-large;
+    margin-bottom: 2px;
+}
+.subtitle {
+    font-weight: lighter;
+    font-size: medium;
+    margin-top: 2px;
+}
+
+ a {
+    color: #9a8c98;
+    text-decoration: none;
+}
+.links {
+    color: #9a8c98;
+    text-decoration: none;
+}
+
 
 h1 .subheading {
     display: block;
@@ -25,8 +59,14 @@ li.menu-item:not(:last-child) {
 
  .card {
     position: absolute;
-  left: 50%;
-  top: 50%;
-  /* -webkit-transform: translate(-50%, -50%); */
-  transform: translate(-50%, -90%);
+    background-color: white;
+    padding: 10px 30px 30px 30px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height:0;
+    width:40%;
+    padding-bottom:20%;
+    color: #22223b;
  }
+
