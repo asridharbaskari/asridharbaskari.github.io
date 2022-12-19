@@ -16,10 +16,10 @@
   
 body {
     font: 15px 'Messina Sans', sans-serif;
-    background-color: #edede9;
-background-image:  linear-gradient(#d5bdaf 2px, transparent 2px), linear-gradient(90deg, #d5bdaf 2px, transparent 2px), linear-gradient(#d5bdaf 1px, transparent 1px), linear-gradient(90deg, #d5bdaf 1px, #edede9 1px);
+    /* background-color: #F0EAD6    ; */
+/* background-image:  linear-gradient(#d5bdaf 2px, transparent 2px), linear-gradient(90deg, #d5bdaf 2px, transparent 2px), linear-gradient(#d5bdaf 1px, transparent 1px), linear-gradient(90deg, #d5bdaf 1px, #edede9 1px);
 background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
-background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px; */
 }
 /* https://stackoverflow.com/questions/1065711/better-way-to-control-spacing-between-block-elements */
 .title {
@@ -33,7 +33,7 @@ background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
 }
 
  a {
-    color: #9a8c98;
+    color: blue;
     text-decoration: none;
 }
 .links {
