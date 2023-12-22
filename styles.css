@@ -1,72 +1,12 @@
-
-@import url("fonts/messina/stylesheet.css");
-
-.title {
-    font-weight: normal;
-}
-
-/* *{
-    padding: 0;
-    margin: 0;
-  } */
-
-  * {
-    text-align: left;
-  }
-  
 body {
-    font: 15px 'Messina Sans', sans-serif;
-    /* background-color: #F0EAD6    ; */
-/* background-image:  linear-gradient(#d5bdaf 2px, transparent 2px), linear-gradient(90deg, #d5bdaf 2px, transparent 2px), linear-gradient(#d5bdaf 1px, transparent 1px), linear-gradient(90deg, #d5bdaf 1px, #edede9 1px);
-background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
-background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px; */
-}
-/* https://stackoverflow.com/questions/1065711/better-way-to-control-spacing-between-block-elements */
-.title {
-    font-size: xx-large;
-    margin-bottom: 2px;
-}
-.subtitle {
-    font-weight: lighter;
-    font-size: medium;
-    margin-top: 2px;
+    margin: 40px auto;
+    max-width: 650px;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #444;
+    padding: 0 10px
 }
 
- a {
-    color: blue;
-    text-decoration: none;
+h1,h2,h3 {
+    line-height: 1.2
 }
-.links {
-    color: #9a8c98;
-    text-decoration: none;
-}
-
-
-h1 .subheading {
-    display: block;
-    font-size: 65%;
-    opacity: 0.75;
-  }
-
-li.menu-item:not(:last-child) { 
-    margin-bottom:3px;  
- }
-
- ol, ul {
-    text-decoration: none;
-    list-style: none;
- }
-
- .card {
-    position: absolute;
-    background-color: white;
-    padding: 10px 30px 30px 30px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    height:0;
-    width:40%;
-    padding-bottom:20%;
-    color: #22223b;
- }
-
