@@ -1,12 +1,36 @@
-body {
+html {
+    background: #f3f4f5;
+  }
+  
+  body {
+    font-family: 'Inconsolata', monospace; /* As specified, using Inconsolata */
     margin: 40px auto;
-    max-width: 650px;
-    line-height: 1.6;
-    font-size: 18px;
-    color: #444;
-    padding: 0 10px
-}
-
-h1,h2,h3 {
-    line-height: 1.2
-}
+    max-width: 650px; /* Adjusted for content alignment */
+    line-height: 1.6; /* For better readability */
+    font-size: 18px; /* Slightly larger font size for readability */
+    color: #444; /* Dark gray color for text */
+    padding: 0 10px;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Inconsolata', monospace; /* Consistency in font for headings */
+    line-height: 1.2; /* Closer line spacing for headings */
+    text-rendering: optimizeLegibility; /* Enhance legibility */
+    /* Additional styles can be added for headings if needed */
+  }
+  
+  /* Additional styles from the website can be integrated here */
+  /* For example, styles for navigation menu, tables, lists, etc. */
+  
+  /* Navigation Menu Styles */
+  .custom-menu-wrapper {
+    /* Style properties for the menu */
+  }
+  
+  /* Table Styles */
+  table {
+    /* Style properties for tables */
+  }
+  
+  /* You can continue adding more styles from the website here */
+  
