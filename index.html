@@ -1,46 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadithyaa's Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-
-    <title></title>
 </head>
 
 <body>
-    <h1>Aadithyaa Sridharbaskari</h2>
+    <h1>Aadithyaa Sridharbaskari</h1>
+    <img src="assets/me.jpeg" alt="a picture of me">
+    <br>
+    <div> <a href="index.html">home</a> | <a href="">writing</a>
+    </div>
     <hr>
-    <p>I'm an undergraduate studying computer science at the <a href="https://cs.ucdavis.edu/">University of
-            California, Davis</a>.</p>
-    <p>I'm interested in the theory of distributed algorithms, quantum information theory & computation, and programming language theory.</p>
-    <h2>Selected coursework</h2>
-    <ul>
-        <li>ECS 271: Machine Learning<sup>*&dagger;</sup></li>
-        <li>ECS 240: Programming Languages<sup>*&dagger;</sup></li>
-        <li>ECS 150: Operating Systems<sup>*</sup></li>
-        <li>ECS 189A: Introduction to Quantum Computation</li>
-        <li>MAT 150A: Group Theory</li>
-        <li>PHY 115A: Introduction to Quantum Mechanics</li>
-        <li>PHY 112: Thermodynamics and Statistical Mechanics</li>
-        <li>ECS 189A: Theory of Distributed Algorithms</li>
-
-    </ul>
-    <p></p>
-    <p><sup>*</sup>Planned<br>
-        <sup>&dagger;</sup>Graduate-level coursework
+    <p>I'm a <span id="year">first</span>-year PhD student in computer science at UT Austin. I'm very fortunate to be
+        advised by William
+        Kretschmer.
     </p>
-    <h2>Articles</h2>
-    <ul>
-        <li><a href="articles/rectangle-cuts.html">Minimum cuts to divide a rectangle into squares</a></li>
-        <li><a href="articles/edit-distance.html">Minimum edit distance</a></li>
-        <li><a href="articles/carnot-functional.html">Constraining the Carnot efficiency</a></li>
-    </ul>
+    <p>I'm interested in quantum computation, especially connections to algorithms,
+        complexity, and learning. </p>
+    <p>My email is</p>
+    <p style="font-family: 'Courier New', Courier, monospace;">[first initial][last name] at gmail dot com</p>
+    <p>If you'd ever like to chat about research, please don't hesitate to reach out!</p>
+    <script>
+        const years = ["first", "second", "third", "fourth", "fifth", "sixth"];
 
-
-
+        // Initialize date variables
+        let date = new Date();
+        let currentYear = date.getFullYear();
+        let currentMonth = date.getMonth();
+        let startingMonth = 7; // August encoded by 7 because zero-indexing
+        let phdStartYear = 2026;
+        let yearIndex = currentYear - phdStartYear;
+        if (currentMonth < startingMonth) {
+            yearIndex = Math.max(0, yearIndex - 1);
+        }
+        document.getElementById("year").innerHTML = years[yearIndex];
+        // const randIndex = Math.floor(Math.random() * years.length)
+        // document.getElementById("year").innerHTML = years[randIndex]
+    </script>
 </body>
 
 </html>
